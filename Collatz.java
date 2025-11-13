@@ -12,7 +12,8 @@ public class Collatz {
                 System.out.print(num);       
             }
 
-            while (num != 1) {               
+            // לולאה שרצה לפחות פעם אחת
+            do {
                 if (num % 2 == 0) {
                     num = num / 2;
                 } else {
@@ -22,7 +23,7 @@ public class Collatz {
                 if (mode == 'v') {
                     System.out.print(" " + num);
                 }
-            }
+            } while (num != 1);
 
             if (mode == 'v') {
                 System.out.println(" (" + counter + ")");

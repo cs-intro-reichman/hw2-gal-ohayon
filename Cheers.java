@@ -10,10 +10,13 @@ public class Cheers {
         for (int i = 0; i < length; i++) {
             char ch = name.charAt(i);
 
+            // אם האות נמצאת ברשימת ה-"an"
             if (check.indexOf(ch) != -1) {
                 System.out.println("Give me an " + ch + ": " + ch + "!");
-            } else {
-                System.out.println("Give me a " + ch + ": " + ch + "!");
+            } 
+            // אחרת צריך EXACTLY שתי רווחים אחרי a
+            else {
+                System.out.println("Give me a  " + ch + ": " + ch + "!");
             }
         }
 
