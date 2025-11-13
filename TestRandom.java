@@ -2,5 +2,35 @@
 public  class  TestRandom {
 	public static void main(String[]  args) {
 	    // Replace this comment with your code
+		int testnumber = Integer.parseInt(args[0]);
+		int counter=0;
+		double bigger=0;
+		double smaller=0;
+		double ratio=0;
+		while(counter<=testnumber-1)
+		{
+			double check = Math.random();
+			if  (check<=0.5)
+			{
+				smaller++;
+			}
+			else
+			{
+				bigger++;
+			}
+			counter++;
+		}
+		ratio=bigger/smaller;
+		if(smaller>0)
+		{
+		System.out.println("> 0.5: "+ bigger +" times");
+		System.out.println("<= 0.5: "+ smaller +" times");
+		System.out.println("Ratio:  "+ ratio );
+		}
+		else
+		{
+		System.out.println("> 0.5: "+ bigger +" times");
+		System.out.println("<= 0.5: "+ smaller +" times");
+		}
 	}
 }
